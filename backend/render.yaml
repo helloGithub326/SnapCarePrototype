@@ -1,0 +1,10 @@
+services:
+  - type: web
+    plan: free
+    name: backend
+    runtime: python
+    buildCommand: './build.sh'
+    startCommand: 'gunicorn backend.wsgi --bind 0.0.0.0:$PORT' 
+    envVars:
+      - key: SECRET_KEY
+        generateValue: false
