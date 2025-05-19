@@ -59,7 +59,7 @@ export default function HomeScreen() {
         
         const formData = new FormData();
         formData.append("image", blob, "image.jpg");
-        var apiUrl = "http://127.0.0.1:8000/skinImage/"
+        var apiUrl = "https://snap-care.onrender.com/skinImage/"
         
         try {
             const response = await fetch(apiUrl, {

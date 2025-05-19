@@ -133,7 +133,7 @@ import requests
 
 def predict_skin_condition(image_path, model_path = "/Users/krish/Desktop/SnapCare/backend/api/SKIN_MODEL", K=3):
     # Load and preprocess image
-    full_path = "http://127.0.0.1:8000/media/" + image_path
+    full_path = "https://snap-care.onrender.com/media/" + image_path
     response = requests.get(full_path)
     response.raise_for_status()
 
